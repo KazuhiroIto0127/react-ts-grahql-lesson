@@ -34,7 +34,9 @@ function App() {
   return (
     <div>
       <header className="p-3 h-10 bg-slate-300">test</header>
-      <main className="p-3">{GetCountries()}</main>
+      <main className="p-3 max-w-full">
+        <ul className="flex flex-wrap gap-3">{GetCountries()}</ul>
+      </main>
     </div>
   );
 }
